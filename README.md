@@ -1,2 +1,2 @@
 # PiercingValues
-COMP4711 lab 1
+DGPT4711 lab 1
