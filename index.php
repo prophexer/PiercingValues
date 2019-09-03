@@ -36,11 +36,20 @@ and open the template in the editor.
         $second->add_grade(50);
         $students['a456'] = $second;
 
+        $meStudent = new Student();
+        $meStudent->surname = "De Pauw";
+        $meStudent->first_name = "Xavier";
+        $meStudent->add_email('work', 'xavier@dgpt.com');
+        $meStudent->add_grade(75);
+        $students['x789'] = $meStudent;
+        
         ksort($students);
         
         foreach($students as $student)
-            echo $student->toString();
-
-        ?>
+        {
+            ?> <p><strong>  
+                <?php echo $student->toString(); ?>
+            </strong></p>
+        <?php } ?>
     </body>
 </html>
